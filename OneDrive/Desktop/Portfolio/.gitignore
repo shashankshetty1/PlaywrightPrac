@@ -1,0 +1,13 @@
+node_modules
+dist
+*.tsbuildinfo
+.vite
+
+# Environment files hold real keys — never commit them.
+.env
+.env.*
+!.env.example
+
+# Local deploy tooling
+.vercel
+.netlify

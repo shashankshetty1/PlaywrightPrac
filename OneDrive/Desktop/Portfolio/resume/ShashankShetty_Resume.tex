@@ -1,0 +1,183 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{{#1 \vspace{-2pt}}}
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubItem}[2]{\item\small{\textbf{#1}{#2}}\vspace{-4pt}}
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+  {\Huge \scshape Shashank Shetty} \\ \vspace{1pt}
+  \small
+  \raisebox{-0.1\height}\faPhone\ 6361128305 ~
+  \href{mailto:shettyshashank089@gmail.com}{\raisebox{-0.2\height}\faEnvelope\ \underline{shettyshashank089@gmail.com}} ~
+  \href{https://www.linkedin.com/in/shashank-shetty-49a80b22b/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/shashank-shetty}} ~
+  \href{https://github.com/shashankshetty1}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/shashankshetty1}}
+  \vspace{-8pt}
+\end{center}
+
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {AMC Engineering College}{2021 -- 2025}
+      {Bachelor of Engineering in Computer Science (CSE)}{CGPA -- \textbf{8.37 / 10}}
+  \resumeSubHeadingListEnd
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+\begin{multicols}{2}
+  \begin{itemize}[itemsep=1pt, parsep=1pt]
+    \item \small Postman API Automation -- Udemy
+    \item \small Playwright JS/TS Automation -- Udemy
+    \item \small Project Management -- Great Learning
+    \item \small Java -- HackerRank
+  \end{itemize}
+\end{multicols}
+\vspace*{2.0\multicolsep}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+  \resumeSubheading
+      {Junior Software Quality Assurance Engineer}{Aug 2025 -- Present}
+      {Vrio Digital Solutions}{Bangalore, Karnataka}
+      \resumeItemListStart
+        \resumeItem{Executed end-to-end functional test plans and tracked test coverage using \textbf{XRay} integrated with \textbf{Jira}, ensuring complete feature verification across Agile sprints.}
+       \resumeItem{Collaborated closely with developers to reproduce, debug, and verify defect fixes, ensuring accurate issue resolution and improving overall application quality.}
+\resumeItem{Used \textbf{Google BigQuery} to validate backend datasets, confirming data accuracy and system integrity during test cycles.}
+        \resumeItem{Self-initiated a \textbf{Playwright/TypeScript} automation framework outside core responsibilities, converting manual regression cases into an automated UI and API suite to build toward SDET-level tooling skills.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Full Stack Developer Intern}{Jan 2025 -- May 2025}
+      {Besant Technologies}{Bangalore, Karnataka}
+      \resumeItemListStart
+       \resumeItem{Developed hands-on experience with full-stack application development and front-end/back-end integration using \textbf{Java}, \textbf{JavaScript}, \textbf{HTML}, \textbf{CSS}, and \textbf{MySQL}.}
+\resumeItem{Collaborated with cross-functional teams to develop responsive application components, integrate frontend and backend functionality, and improve overall user experience across project deliverables.}
+      \resumeItemListEnd
+
+
+
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \vspace{-5pt}
+  \resumeSubHeadingListStart
+  
+\resumeProjectHeading
+{\textbf{OrangeHRM Test Automation Framework} $|$ \emph{Playwright, TypeScript, Node.js, GitHub Actions}}{Sep 2026}
+\resumeItemListStart
+\resumeItem{Engineered a scalable \textbf{Playwright + TypeScript} automation framework using the \textbf{Page Object Model}, implementing \textbf{10 reusable page objects} across Authentication, Admin, Employee (PIM), and Dashboard modules with \textbf{smoke and regression} test suites.}
+\resumeItem{Developed reusable \textbf{custom fixtures} and authentication state management using \textbf{storageState}, with externalized JSON test data to improve test reusability, maintainability, and execution efficiency.}
+\resumeItem{Automated \textbf{REST API testing} with Playwright Request Context, covering \textbf{CRUD workflows} and dashboard API validation, and integrated \textbf{GitHub Actions CI/CD} with HTML/Allure reporting and automated failure diagnostics.}
+\resumeItemListEnd
+
+  \vspace{-15pt}
+  
+  \resumeProjectHeading
+    {\textbf{SGE – Smart Growth Engine} $|$ \emph{Manual Testing, Jira Xray, SQL, BigQuery, Firebase}}{Jan 2026}
+    \resumeItemListStart
+
+      \resumeItem{Performed end-to-end manual testing of Veolia's global facility-management application, covering WWTP/WTP facilities, GeoMap, filters, facility details, ownership, workforce data, and geographical locations, with validation against the facility table.}
+
+      \resumeItem{Created and executed \textbf{500+ test cases} using \textbf{Jira Xray} across functional, UI, chatbot, database, regression, positive, negative, and boundary scenarios; tested \textbf{100+ chatbot queries} for response accuracy and facility-specific information.}
+  \vspace{-11pt}     
+ \resumeItem{Validated backend data using \textbf{BigQuery SQL and Firebase}, identified and tracked \textbf{100+ defects} in Jira, and performed defect retesting and regression testing to ensure application quality and data consistency.}
+
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\vspace{-13pt}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{QA Tools}{: Jira, Postman, Playwright, K6}
+    \resumeSubItem{Scripting \& Languages}{: Java, JavaScript, TypeScript, SQL}
+    \resumeSubItem{Testing Methodologies}{: End-to-End Functional Testing, API Testing \& Automation, Agile/Scrum, Regression Testing}
+    \resumeSubItem{Infrastructure \& Data}{: Google BigQuery, MySQL, GitHub, VS Code}
+    \resumeSubItem{Soft Skills}{: Cross-team Communication, Defect Debugging, Problem Solving, Time Management, Fluent English}
+  \resumeSubHeadingListEnd
+
+%-----------LEADERSHIP-----------
+\section{Leadership / Extracurricular}
+\begin{itemize}[leftmargin=*, itemsep=2pt, parsep=0pt]
+  \item Won \textbf{1st Place} in the UDAAN 2023 inter-department volleyball tournament at AMC Engineering College, recognized for teamwork, coordination, and performance under pressure.
+\end{itemize}
+
+\end{document}

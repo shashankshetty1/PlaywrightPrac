@@ -1,0 +1,5 @@
+# Only used when deploying to Netlify (Vercel needs no config file).
+[build]
+  command = "npm run build"
+  publish = "dist"
+  functions = "netlify/functions"
